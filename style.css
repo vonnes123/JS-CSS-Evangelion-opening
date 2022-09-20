@@ -1,0 +1,570 @@
+body{
+    background-image: url(/images/black-screen.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    margin: 0;
+}
+#playButton{
+    position: absolute;
+    background-color: #292626;
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    border-radius: 25px;
+    font-size: 1rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+#playButton:hover{
+    cursor: pointer;
+    background-color: #3a3838;
+}
+
+.angel1{
+    position: absolute;
+    background-image: url(/images/angel1.png);
+    background-size: contain;
+    width: 700px;
+    height: 700px;
+    z-index: 999;
+    margin: auto;
+    background-repeat: no-repeat;
+    left: 50%;
+    bottom: -100%;
+    transform: translate(-50%);
+}
+
+.tree{
+    position: absolute;
+    background-image: url(/images/Tree_of_Life.png);
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 1700px;
+    z-index: 999;
+    margin: auto;
+    background-repeat: no-repeat;
+    left: 50%;
+    top: -250%;
+    transform: translate(-50%);
+}
+.title{
+    position: absolute;
+    background-image: url(./images/title.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 600px;
+    width: 800px;
+    left: 25%;
+    transform: translate(-50%);
+    animation: title 2s ease 0s 1 normal forwards;
+    display: none;
+}
+@keyframes title {
+	0% {
+		transform: scale(2);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+.sky-shinji{
+    position: absolute;
+    background-image: url(./images/Shinji.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 800px;
+    width: 1000px;
+    left: 20%;
+    bottom: -10%;
+    transform: translate(-50%);
+    display: none;
+    animation: sky-shinji 4s ease 0s 1 normal forwards;
+}
+@keyframes sky-shinji {
+	0% {
+		opacity: 0;
+		transform: translateX(1000px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+.dark-shinji{
+    position: absolute;
+    background-image: url(./images/dark-shinji.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: 999;
+    height: 700px;
+    width: 400px;
+    left: 85%;
+    transform: translate(-50%);
+    display: none;
+    animation: dark-shinji 3s ease 0s 1 normal forwards;
+}
+@keyframes dark-shinji {
+	0% {
+		opacity: 0;
+	}
+
+	90% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+.dark-asuka{
+    position: absolute;
+    background-image: url(/images/dark-asuka2.png);
+    background-size: contain;
+    width: 400px;
+    height: 1000px;
+    z-index: 500;
+    margin: auto;
+    background-repeat: no-repeat;
+    left: 15%;
+    bottom: -150%;
+    transform: translate(-50%);
+    display: none;
+    animation: dark-girls 7s ease 0s 1 normal forwards;
+}
+.dark-rei{
+    position: absolute;
+    background-image: url(/images/dark-rei.png);
+    background-size: contain;
+    width: 400px;
+    height: 1000px;
+    z-index: 500;
+    margin: auto;
+    background-repeat: no-repeat;
+    left: 85%;
+    top: -150%;
+    transform: translate(-50%);
+    display: none;
+    animation: dark-girls 7s ease 0s 1 normal forwards;
+}
+@keyframes dark-girls {
+	0% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+.arm{
+    position: absolute;
+    background-image: url(./images/arm.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 800px;
+    width: 1200px;
+    left: 20%;
+    bottom: 10%;
+    transform: translate(-50%);
+    display: none;
+    animation: arm 3s ease 0s 1 normal forwards;
+}
+@keyframes arm {
+	0% {
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+    90% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+.tree2{
+    position: absolute;
+    background-image: url(./images/Tree_of_Life.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 700px;
+    width: 1200px;
+    left: 10%;
+    bottom: 0%;
+    transform: translate(-50%);
+    display: none;
+    animation: tree2 5s ease 0s 1 normal forwards;
+}
+@keyframes tree2 {
+	0% {
+		opacity: 0;
+		transform: translateY(800px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+    90% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+.sky-misato{
+    position: absolute;
+    background-image: url(./images/misato2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 700px;
+    width: 1200px;
+    left: -5%;
+    bottom: 0%;
+    transform: translate(-50%);
+    display: none;
+    animation: sky-misato 5s ease 0s 1 normal forwards;
+}
+@keyframes sky-misato {
+	0% {
+		opacity: 0;
+		transform: translateY(800px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+    90% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+.dark-misato{
+    position: absolute;
+    background-image: url(./images/dark-misato.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 1000px;
+    width: 500px;
+    left: 60%;
+    display: none;
+    transform: translate(-50%);
+    animation: dark-misato 5s ease 0s 1 normal forwards;
+}
+@keyframes dark-misato {
+	0% {
+		opacity: 0;
+		transform: translateX(150px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+    90% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+.sad-misato{
+    position: absolute;
+    background-image: url(./images/sad-misato.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: 999;
+    height: 700px;
+    width: 800px;
+    left: 25%;
+    bottom: -10%;
+    transform: translate(-50%);
+    display: none;
+    animation: sad-misato 5s ease 0s 1 normal forwards;
+}
+@keyframes sad-misato {
+	0% {
+		opacity: 0;
+	}
+
+	90% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+.sad-shinji{
+    position: absolute;
+    background-image: url(./images/sad-shinji.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 800px;
+    width: 1000px;
+    left: 20%;
+    bottom: -10%;
+    transform: translate(-50%);
+    display: none;
+    animation: sky-shinji 5s ease 0s 1 normal forwards;
+}
+@keyframes sky-shinji {
+	0% {
+		opacity: 0;
+		transform: translateX(1000px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+.rei-window{
+    position: absolute;
+    background-image: url(./images/rei-window.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 600px;
+    width: 1000px;
+    left: 40%;
+    bottom: 10%;
+    transform: translate(-50%);
+    display: none;
+    animation: rei-window 2s ease 0s 1 normal forwards;
+}
+@keyframes rei-window {
+	0% {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+.rei-eye{
+    position: absolute;
+    background-image: url(./images/rei-eye.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 1150px;
+    width: 1800px;
+    left: 50%;
+    bottom: -20%;
+    opacity: 80%;
+    transform: translate(-50%);
+    display: none;
+    animation: rei-eye 1.5s ease 0s 1 normal forwards;
+}
+@keyframes rei-eye {
+	0% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+.shinji-cockpit{
+    position: absolute;
+    background-image: url(./images/shinji-cockpit.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 1000px;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    display: none;
+    animation: shinji-cockpit 3s ease 0s 1 normal forwards;
+}
+@keyframes shinji-cockpit {
+	0% {
+		background-position: center top;
+		background-size: 100%;
+	}
+
+	100% {
+		background-position: center top;
+		background-size: 150%;
+	}
+}
+.shinji-cockpit-face{
+    position: absolute;
+    background-image: url(./images/shinji-cockpit-face.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 1200px;
+    width: 120%;
+    left: 50%;
+    transform: translate(-50%);
+    display: none;
+    animation: shinji-cockpit 2s ease 0s 1 normal forwards;
+}
+.mech1{
+    position: absolute;
+    background-image: url(./images/mech1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 1200px;
+    width: 100%;
+    left: 50%;
+    bottom: -60%;
+    transform: translate(-50%);
+    display: none;
+    animation: mech1 2s ease 0s 1 normal forwards;
+}
+@keyframes mech1 {
+	0% {
+		background-position: right top;
+		background-size: 100%;
+	}
+
+	100% {
+		background-position: right top;
+		background-size: 150%;
+	}
+}
+.mech2{
+    position: absolute;
+    background-image: url(./images/mech1.png);
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position: right top;
+    height: 1200px;
+    width: 100%;
+    bottom: -60%;
+    display: none;
+    animation: mech2 2s ease 0s 1 normal forwards;
+}
+@keyframes mech2 {
+	0% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+		transform-origin: center center;
+	}
+
+	10% {
+		animation-timing-function: ease-in;
+		transform: scale(0.91);
+	}
+
+	17% {
+		animation-timing-function: ease-out;
+		transform: scale(0.98);
+	}
+
+	33% {
+		animation-timing-function: ease-in;
+		transform: scale(0.87);
+	}
+
+	45% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+	50% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateY(250px);
+	}
+}
+.mech3{
+    position: absolute;
+    background-image: url(./images/mech3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 600px;
+    width: 100%;
+    display: none;
+    animation: mech3 2.5s ease 0s 1 normal forwards;
+}
+@keyframes mech3 {
+	0% {
+		opacity: 0;
+		transform: translateY(550px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+.mech4{
+    position: absolute;
+    background-image: url(./images/mech4.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 900px;
+    width: 100%;
+    display: none;
+    animation: mech4 4s ease 0s 1 normal forwards;
+}
+@keyframes mech4 {
+	0% {
+		transform: scale(2);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+.end-shinji{
+    position: absolute;
+    background-image: url(./images/end-shinji.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 900px;
+    width: 100%;
+    display: none;
+    animation: end-shinji 3s ease 0s 1 normal forwards;
+}
+@keyframes end-shinji {
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
